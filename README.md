@@ -1,9 +1,10 @@
 # simple-ocaml-shell
 
 This repo implements a simple shell (`osh`) in OCaml. I wrote it in
-2021 while I was at the [Recurse Center](https://www.recurse.com/) to
-learn more about how to do systems programming in a strongly-typed
-functional programming language.
+June of 2021, while I was at the [Recurse
+Center](https://www.recurse.com/), in order to learn more about
+systems programming in a strongly-typed functional programming
+language.
 
 ## How do I build and test the project?
 

@@ -25,12 +25,12 @@ module Parser = struct
   | '\x20' | '\x0a' | '\x0d' | '\x09' -> true
   | _ -> false
 
-  let is_token = function
-    | '\x20' | '\x0a' | '\x0d' | '\x09' | '&' | '>' -> false
-    | _ -> true
+  let is_token_char = function
+    | '&' | '>' -> false
+    | x -> not @@ is_whitespace x
 
   let ws = take_while is_whitespace
-  let token = take_while1 is_token <* ws
+  let token = take_while1 is_token_char  <* ws
     >>= (fun tok ->
         if tok = "cd" then fail "cd is not a valid token"
         else return tok
@@ -38,7 +38,7 @@ module Parser = struct
 
   let amp = char '&' <* ws
   let redir = char '>' <* ws
-  let quit = string "exit" <* ws  (* exit is a reserved word in OCaml, hence quit *)
+  let quit = string "exit" <* ws
   let cd = string "cd" <* ws
   let path = string "path" <* ws
 
@@ -169,7 +169,7 @@ let main stream =
     | Error _ -> print_error ()
     | Ok (NoOp) -> () (* Empty lines should just be treated as no-ops. *)
     | Ok (Quit) -> exit 0
-    | Ok (ChangeDirectory x) -> Unix.chdir x
+    | Ok (ChangeDirectory x) -> change_directory x
     | Ok (PathChange paths) ->
       let cwd = Unix.getcwd () in
       path := List.map (amend_path cwd) paths

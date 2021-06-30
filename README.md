@@ -74,7 +74,7 @@ by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. You can find
 the original project description
 [here](https://github.com/remzi-arpacidusseau/ostep-projects/tree/master/processes-shell).
 
-Normally, I wouldn't post solutions to exercises from a
-class. However, that most classes will use C for this type of project,
-I don't think I'm creating much of an opportunity for cheating by
-posting an OCaml implementation.
+Normally, I wouldn't post solutions to exercises from a class. Since
+most classes will use C for this type of project, I don't think I'm
+creating much of an opportunity for cheating by posting an OCaml
+implementation.

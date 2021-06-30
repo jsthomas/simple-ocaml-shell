@@ -68,7 +68,7 @@ The design and tests for this project come from the book [Operating
 Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 by Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau. You can find
 the original project description
-[here](https://github.com/remzi-arpacidusseau/ostep-projects/tree/master/processes-shell)
+[here](https://github.com/remzi-arpacidusseau/ostep-projects/tree/master/processes-shell).
 
 Normally, I wouldn't post solutions to exercises from a
 class. However, that most classes will use C for this type of project,

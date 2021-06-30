@@ -8,12 +8,15 @@ functional programming language.
 ## How do I build and test the project?
 
 Assuming you have `dune` [installed](https://dune.build/install), you
-should be able to set the project up by running
+should be able to build the shell by running
 
 ```
 dune build
 mv _build/default/osh.exe osh
 ```
+
+I built this project using version 4.11.1 of the compiler.
+
 
 The second command isn't strictly necessary, I just prefer to use the
 program without it's default `.exe` extension.

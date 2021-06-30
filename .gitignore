@@ -1,3 +1,5 @@
+osh
+tests-out/*
 *.annot
 *.cmo
 *.cma

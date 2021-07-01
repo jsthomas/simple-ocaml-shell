@@ -6,6 +6,10 @@ Center](https://www.recurse.com/), in order to learn more about
 systems programming in a strongly-typed functional programming
 language.
 
+I wrote an accompanying [blog
+post](https://jsthomas.github.io/ocaml-shell.html) that contains a bit
+more exposition about how I approached this project.
+
 ## How do I build and test the project?
 
 Assuming you have `dune` [installed](https://dune.build/install), you
